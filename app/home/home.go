@@ -23,6 +23,7 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 	for _, e := range os.Environ() {
 		if strings.HasPrefix(strings.Split(e, "=")[0], "NGV_") {
 			pair := strings.Split(e, "=")
+			pair[0] = strings.Replace(pair[0], "NGV_NEW_", "", -1)
 			versions[pair[0]] = pair[1]
 		}
 	}
