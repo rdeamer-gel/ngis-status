@@ -1,0 +1,15 @@
+{{define "body"}}
+<div class="starter-template">
+    <h1>NGIS Status</h1>
+    <p class="lead">{{.Version}}</p>
+</div>
+
+	
+<div class="col-md-12">
+	<ul>
+	{{range $key, $value := .Versions}}
+		<li>{{$key}} = {{$value}}</li>
+	{{end}}
+	</ul>
+</div>
+{{end}}

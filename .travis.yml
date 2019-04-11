@@ -1,0 +1,12 @@
+language: go
+go:
+  - 1.12
+  - tip
+install:
+  - go get github.com/gorilla/mux
+  - go get github.com/golang/glog
+  - gem install sass
+  - npm install
+script:
+  - gulp bower
+  - gulp

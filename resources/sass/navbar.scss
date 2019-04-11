@@ -1,0 +1,48 @@
+
+.navbar-right {
+    float: right;
+}
+.nav.navbar-nav.navbar-right ul {
+    float: right;
+}
+.nav.navbar-nav.navbar-right li {
+    float: left;
+}
+.navbar-toggle {
+    float: left;
+    margin-left: 10px;
+    padding-right: 0;
+}
+
+.navbar-fixed-bottom {
+    margin-top: 14px;
+    color: #bbb;
+}
+
+@media all and (max-width:767px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .navbar-header {
+        float: left;;
+    }
+
+    .navbar-collapse {
+        clear: both;
+        float: none;
+    }
+
+
+    .navbar-brand {
+        font-size: 1em;
+    }
+
+
+    .footer {
+        font-size: 0.5em;
+    }
+
+}
+
