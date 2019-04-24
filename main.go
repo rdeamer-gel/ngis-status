@@ -7,6 +7,7 @@ import (
 
 	"github.com/bobbydeveaux/ngis-status/app/common"
 	"github.com/bobbydeveaux/ngis-status/app/home"
+	"github.com/bobbydeveaux/ngis-status/app/api"
 
 	"github.com/golang/glog"
 	"github.com/gorilla/mux"
@@ -20,6 +21,7 @@ func main() {
 	http.Handle("/", httpInterceptor(router))
 
 	router.HandleFunc("/", home.GetHomePage).Methods("GET")
+	router.HandleFunc("/api", api.GetStatus).Methods("GET")
 
 	fileServer := http.StripPrefix("/dist/", http.FileServer(http.Dir("web/dist")))
 	http.Handle("/dist/", fileServer)
