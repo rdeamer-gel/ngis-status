@@ -1,7 +1,7 @@
 package home
 
 import (
-	"https://github.com/rdeamer-gel/ngis-status/common"
+	"github.com/rdeamer-gel/ngis-status/common"
 	"html/template"
 	"net/http"
 	"os"
