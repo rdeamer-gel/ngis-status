@@ -14,6 +14,7 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 		Active   string
 		Version  string
 		Versions map[string]string
+		OC_Project string
 	}
 
 	oc_project := os.Getenv("OC_PROJECT")
@@ -34,6 +35,7 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 		Title:    "Home",
 		Version:  version,
 		Versions: versions,
+		OC_Project: oc_project,
 	}
 
 	common.Templates = template.Must(template.ParseFiles("templates/home/home.html", common.LayoutPath))
