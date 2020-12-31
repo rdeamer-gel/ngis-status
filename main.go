@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bobbydeveaux/ngis-status/app/common"
-	"github.com/bobbydeveaux/ngis-status/app/home"
-	"github.com/bobbydeveaux/ngis-status/app/api"
+	"github.com/rdeamer-gel/ngis-status/app/common"
+	"github.com/rdeamer-gel/ngis-status/app/home"
+	"github.com/rdeamer-gel/ngis-status/app/api"
 
 	"github.com/golang/glog"
 	"github.com/gorilla/mux"
