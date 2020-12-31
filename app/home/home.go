@@ -18,7 +18,7 @@ func GetHomePage(rw http.ResponseWriter, req *http.Request) {
 	}
 
 	oc_project := os.Getenv("OC_PROJECT")
-	version := os.Getenv("OC_PROJECT")
+	version := os.Getenv("NGIS_VERSION")
 
 	versions := make(map[string]string)
 
