@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/bobbydeveaux/ngis-status/app/common"
+	"github.com/rdeamer-gel/ngis-status/app/common"
 	"net/http"
 	"os"
 	"strings"
